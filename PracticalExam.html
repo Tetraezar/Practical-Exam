@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm">
+        <p>
+        <label>Full Name</label><br>
+        <input type="text" id="fullName">
+        <p id = "fullnamefeedback"></p>
+        </p>
+
+        <p>
+        <label>Date of Birth</label><br>
+        <input type="date" id="dob">
+        <p id="dobfeedback"></p>
+        </p>
+
+        <p>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <p id="genderfeedback"></p>
+        </p>
+        
+        <p></p>
+        <label>Religion</label><br>
+        <select id="religion">
+            <option value="">-- Select Religion --</option>
+            <option value="Islam">Islam</option>
+            <option value="Christian">Christian</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+        </select>
+        <p id="religionfeedback"></p>
+        </p>
+
+        <p>
+        <label>How did you get information about SMK Telkom Malang?</label><br>
+        <input type="checkbox" name="source" value="Brochure"> Brochure<br>
+        <input type="checkbox" name="source" value="Newspaper"> Newspaper<br>
+        <input type="checkbox" name="source" value="Banner"> Banner<br>
+        <input type="checkbox" name="source" value="Website"> Website<br>
+        <input type="checkbox" name="source" value="Friend"> Friend<br>
+        <p id="sourcefeedback"></p>
+        </p>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+
+    <p id="message"></p>
+
+    <div id="summary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
